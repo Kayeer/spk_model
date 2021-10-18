@@ -10,8 +10,7 @@ app.use("/", require("./server/router"))
 app.use(
     sass({
         src: __dirname + "/public/stylesheet/scss",
-        dest: path.join('/css'),
-        outputStyle: 'compressed'
+        dest: path.join('/css')
     })
 )
 app.use('/public', express.static(path.join(__dirname, 'public')));
