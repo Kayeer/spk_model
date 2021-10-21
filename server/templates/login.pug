@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/style.css")
+        link(href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet")
+    body
+        .wrapper 
+            header.header 
+                .header__menu 
+                    nav.menu 
+                        ul.menu__list
+                            li(class="menu__list-element" href='') Главная
+            div.container
+                form(action="#" class="form__signin")
+                    label.form__input(for="username")
+                        input(type="text" placeholder="Введите логин" name="username")
+                    label.form__input(for="psswrd")
+                        input(type="password" placeholder="Введите пароль" name="psswrd")
+                    button(type="submit") Войти
+                a(href="" class="form__forgot") Восстановить пароль
+            
+                form(action="#" class="form__registration")
+                    label.form__input(for="username")
+                        input(type="text" placeholder="Логин" name="username")
+                    label.form__input(for="mail")
+                        input(type="text" placeholder="Введите mail" name="mail") 
+                    label.form__input(for="psswrd")
+                        input(type="password" placeholder="Придумайте пароль" name="psswrd")
+                    label.form__input(for="psswrd")
+                        input(type="password" placeholder="Повторите пароль" name="psswrd")
+                    button(type="submit") Регистрация
+                    
+                    
+
+
+
+
